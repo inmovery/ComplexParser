@@ -75,7 +75,6 @@ python-dateutil==2.8.0
 python-http-client==3.2.5
 python-vlc==3.0.7110
 pytz==2019.3
-pypiwin32==223
 pywinpty==0.5.7
 PyYAML==5.1.2
 pyzmq==18.1.1
