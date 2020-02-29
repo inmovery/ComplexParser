@@ -303,42 +303,42 @@ def main():
             # Оповещение о том, что страница пройдена
 
             # Создаём CSV файл для отправки в качестве Attachment
-            directory = os.path.dirname(os.path.realpath(__file__))
-            filename = "data.csv"
-            file_path = os.path.join(directory, 'csv_files/', filename)
-            dataframe.to_csv(file_path, index=False)
+            # directory = os.path.dirname(os.path.realpath(__file__))
+            # filename = "data.csv"
+            # file_path = os.path.join(directory, 'csv_files/', filename)
+            # dataframe.to_csv(file_path, index=False)
 
             # Читаем сохранённый файл
-            with open(file_path, 'rb') as f:
-                data = f.read()
-                f.close()
+            # with open(file_path, 'rb') as f:
+            #     data = f.read()
+            #     f.close()
 
-            pre_subj = str(i) + " pages are completed!"
+            # pre_subj = str(i) + " pages are completed!"
+            #
+            # encoded = base64.b64encode(data).decode()
+            # message = Mail(
+            #     from_email=FROM_EMAIL,
+            #     to_emails=TO_EMAIL,
+            #     subject=pre_subj,
+            #     html_content='')
 
-            encoded = base64.b64encode(data).decode()
-            message = Mail(
-                from_email=FROM_EMAIL,
-                to_emails=TO_EMAIL,
-                subject=pre_subj,
-                html_content='')
+            # attachment = Attachment()
+            # attachment.file_content = FileContent(encoded)
+            # attachment.file_type = FileType('text/csv')
+            # attachment.file_name = FileName('data_' + str(i) + '.csv')
+            # attachment.disposition = Disposition('attachment')
+            # attachment.content_id = ContentId('Example Content ID')
+            # message.attachment = attachment
 
-            attachment = Attachment()
-            attachment.file_content = FileContent(encoded)
-            attachment.file_type = FileType('text/csv')
-            attachment.file_name = FileName('data_' + str(i) + '.csv')
-            attachment.disposition = Disposition('attachment')
-            attachment.content_id = ContentId('Example Content ID')
-            message.attachment = attachment
-
-            try:
-                sg = SendGridAPIClient(SENDGRID_API_KEY)
-                response = sg.send(message)
-                print(response.status_code)
-                print(response.body)
-                print(response.headers)
-            except Exception as e:
-                print(e)
-
+            # try:
+            #     sg = SendGridAPIClient(SENDGRID_API_KEY)
+            #     response = sg.send(message)
+            #     print(response.status_code)
+            #     print(response.body)
+            #     print(response.headers)
+            # except Exception as e:
+            #     print(e)
+            print("Страница №" + str(i) + " пройдена!")
             # Переходим на следующую страницу
             driver.find_elements_by_id("p-next")[0].click()
         except Exception as e:
