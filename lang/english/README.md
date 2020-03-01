@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/inmovery/ComplexParser/tree/master#ComplexParser">Русский</a> |
-  <a href="https://github.com/inmovery/ComplexParser/tree/master/lang/english#ComplesParser">English</a>
+  <a href="https://github.com/inmovery/ComplexParser/tree/master/lang/english#ComplexParser">English</a>
 </p>
 
 This project is intended for data collection (parsing) from the site `https://freedom-stat.com`. 
