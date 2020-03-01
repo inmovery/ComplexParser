@@ -3,6 +3,7 @@ astor==0.8.0
 attrs==19.3.0
 backcall==0.1.0
 beautifulsoup4==4.8.2
+bleach==1.5.0
 bs4==0.0.1
 cairocffi==1.1.0
 CairoSVG==2.4.2
@@ -32,6 +33,13 @@ jedi==0.16.0
 Jinja2==2.11.0
 joblib==0.14.1
 jsonschema==3.2.0
+jupyter==1.0.0
+jupyter-client==5.3.4
+jupyter-console==6.1.0
+jupyter-core==4.6.1
+Keras==2.1.5
+Keras-Applications==1.0.8
+Keras-Preprocessing==1.1.0
 kiwisolver==1.1.0
 lxml==4.5.0
 Markdown==3.1.1
@@ -68,6 +76,7 @@ python-dateutil==2.8.0
 python-http-client==3.2.5
 python-vlc==3.0.7110
 pytz==2019.3
+pywin32==227
 pywinpty==0.5.7
 PyYAML==5.1.2
 pyzmq==18.1.1
@@ -82,6 +91,10 @@ sendgrid==6.1.2
 six==1.12.0
 sklearn==0.0
 soupsieve==1.9.5
+tensorboard==2.0.0
+tensorflow==1.5.0
+tensorflow-estimator==2.0.0
+tensorflow-tensorboard==1.5.1
 termcolor==1.1.0
 terminado==0.8.3
 testpath==0.4.4
