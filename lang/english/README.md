@@ -13,7 +13,7 @@ This project provides for such a situation. This project demonstrates the proces
 
 - [Table of Contents](#table-of-contents)
 - [Requirements](#requirements)
-  - [Requirements to sowtware](#requirements-for-software)
+  - [Requirements to software](#requirements-for-software)
   - [Requirements to dependencies](#requirements-to-dependencies)
 - [Installation](#installation)
   - [Connect to the site](#connect-to-the-site)
@@ -30,7 +30,7 @@ This project provides for such a situation. This project demonstrates the proces
 
 ## Requirements
 
-### Requirements to sowtware
+### Requirements to software
 - Python 3.6, 3.7 and their modifications
 
 ### Requirements to dependencies
@@ -63,10 +63,10 @@ In order to access the site you need 3 parameters:
 #### Confirm mail and receive data for authorization
 ![Шаг 3](https://github.com/inmovery/ComplexParser/blob/master/images/3.png?raw=true)
 
-#### Getting access to srvices of site. Step 1
+#### Getting access to services of site. Step 1
 ![Шаг 4](https://github.com/inmovery/ComplexParser/blob/master/images/4.png?raw=true)
 
-#### Getting access to srvices of site. Step 1
+#### Getting access to services of site. Step 1
 ![Шаг 5](https://github.com/inmovery/ComplexParser/blob/master/images/5.png?raw=true)
 
 #### Example of a table from which data is collected
@@ -104,7 +104,7 @@ In order to access the site you need 3 parameters:
 
 ### Heroku Setup
 
-To connect to heroku, follow the following algorithm:
+To connect to heroku, stick to the following algorithm:
 1. Register at [Heroku.com](https://heroku.com)
 2. Log in to [Heroku.com](https://heroku.com)
 3. Create a new application by clicking on the "New" button in the upper right corner of the screen
@@ -128,6 +128,7 @@ Set the constants `URL_PARSE`, `EMAIL`, `PASSWORD`, `SENDGRID_API_key`, `FROM_EM
 Download the application:
 1. Via the command line, using the GitHub's capabilities: `git clone https://github.com/inmovery/ComplexParser.git`
 2. Via download [archive](https://github.com/inmovery/ComplexParser/archive/master.zip)
+
 This program can be run from the command line `python main.py` and the IDE PyCharm.
 
 ## Deployment
@@ -166,4 +167,4 @@ After configuring Heroku, the deployment of the application is the following seq
 
 ## FAQ
 
-See and ask questions in [Issues](https://github.com/inmovery/ComplexParser/issues)
+See and ask questions in [Issues](https://github.com/inmovery/ComplexParser/issues).
