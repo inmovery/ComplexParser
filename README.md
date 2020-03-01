@@ -167,6 +167,6 @@
 11. heroku scale worker=1
 12. heroku logs --tail
 
-## Частозадаваемые вопросы
+## Вопросы
 
 Все вопросы и ответы на них вы найдёте в разделе [Issues](https://github.com/inmovery/ComplexParser/issues), иначе задайте вопрос.
