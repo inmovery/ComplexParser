@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/inmovery/ComplexParser/tree/master#ComplexParser">Русский</a> |
-  <a href="https://github.com/inmovery/ComplexParser/tree/master/lang/russian#ComplesParser">English</a>
+  <a href="https://github.com/inmovery/ComplexParser/tree/master/lang/english#ComplesParser">English</a>
 </p>
 
 This project is intended for data collection (parsing) from the site `https://freedom-stat.com`. 
@@ -54,13 +54,23 @@ In order to access the site you need 3 parameters:
 - Log in to the tasks section and click on the following commands:
   - Check the progress
   - To Receive the award
+#### Registration
+![Шаг 1](https://github.com/inmovery/ComplexParser/blob/master/images/1.png?raw=true)
 
-![Step 1](https://github.com/inmovery/ComplexParser/tree/master/images/1.jpg)
-![Step 2](https://github.com/inmovery/ComplexParser/tree/master/images/2.jpg)
-![Step 3](https://github.com/inmovery/ComplexParser/tree/master/images/3.jpg)
-![Step 4](https://github.com/inmovery/ComplexParser/tree/master/images/4.jpg)
-![Step 5](https://github.com/inmovery/ComplexParser/tree/master/images/5.jpg)
-![Step 6](https://github.com/inmovery/ComplexParser/tree/master/images/6.jpg)
+#### Receipt of the letter
+![Шаг 2](https://github.com/inmovery/ComplexParser/blob/master/images/2.png?raw=true)
+
+#### Confirm mail and receive data for authorization
+![Шаг 3](https://github.com/inmovery/ComplexParser/blob/master/images/3.png?raw=true)
+
+#### Getting access to srvices of site. Step 1
+![Шаг 4](https://github.com/inmovery/ComplexParser/blob/master/images/4.png?raw=true)
+
+#### Getting access to srvices of site. Step 1
+![Шаг 5](https://github.com/inmovery/ComplexParser/blob/master/images/5.png?raw=true)
+
+#### Example of a table from which data is collected
+![Шаг 6](https://github.com/inmovery/ComplexParser/blob/master/images/6.png?raw=true)
 
 ### Installation of dependencies
 - Installing the module SendGrid
@@ -83,9 +93,14 @@ In order to access the site you need 3 parameters:
 7. Create API key
 8. Confirm connection.
 
-![Step 1](https://github.com/inmovery/ComplexParser/tree/master/images/8.jpg)
-![Step 2](https://github.com/inmovery/ComplexParser/tree/master/images/9.jpg)
-![Step 3](https://github.com/inmovery/ComplexParser/tree/master/images/10.jpg)
+#### Getting access to send messages
+![Шаг 1](https://github.com/inmovery/ComplexParser/blob/master/images/8.png?raw=true)
+
+#### Getting API_KEY
+![Шаг 2](https://github.com/inmovery/ComplexParser/blob/master/images/9.png?raw=true)
+
+#### The result of API_KEY generation is based on its name
+![Шаг 3](https://github.com/inmovery/ComplexParser/blob/master/images/10.png?raw=true)
 
 ### Heroku Setup
 
