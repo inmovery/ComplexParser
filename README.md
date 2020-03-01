@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/inmovery/ComplexParser/tree/master#ComplexParser">Русский</a> |
-  <a href="https://github.com/inmovery/ComplexParser/tree/master/lang/russian#ComplesParser">English</a>
+  <a href="https://github.com/inmovery/ComplexParser/tree/master/lang/english#ComplesParser">English</a>
 </p>
 
 Данный проект предназначен для сбора данных (парсинга) с сайта https://freedom-stat.com. 
@@ -54,13 +54,24 @@
 - Зайти в раздел «Задания» и нажать следующие команды:
   - Проверить выполнение
   - Получить награду
+  
+#### Регистрация
+![Шаг 1](https://github.com/inmovery/ComplexParser/blob/master/images/1.png?raw=true)
 
-![Шаг 1](https://github.com/inmovery/ComplexParser/tree/master/images/1.jpg)
-![Шаг 2](https://github.com/inmovery/ComplexParser/tree/master/images/2.jpg)
-![Шаг 3](https://github.com/inmovery/ComplexParser/tree/master/images/3.jpg)
-![Шаг 4](https://github.com/inmovery/ComplexParser/tree/master/images/4.jpg)
-![Шаг 5](https://github.com/inmovery/ComplexParser/tree/master/images/5.jpg)
-![Шаг 6](https://github.com/inmovery/ComplexParser/tree/master/images/6.jpg)
+#### Получение письма
+![Шаг 2](https://github.com/inmovery/ComplexParser/blob/master/images/2.png?raw=true)
+
+#### Подтверждение почты и получение данных для авторизации
+![Шаг 3](https://github.com/inmovery/ComplexParser/blob/master/images/3.png?raw=true)
+
+#### Получение доступа к сайту. Шаг 1
+![Шаг 4](https://github.com/inmovery/ComplexParser/blob/master/images/4.png?raw=true)
+
+#### Поулчение доступа к сайту. Шаг 2
+![Шаг 5](https://github.com/inmovery/ComplexParser/blob/master/images/5.png?raw=true)
+
+#### Пример таблицы, из которой собираются данные
+![Шаг 6](https://github.com/inmovery/ComplexParser/blob/master/images/6.png?raw=true)
 
 ### Установка зависимостей
 - Установка модуля SendGrid
@@ -83,9 +94,14 @@
 7. Создать API KEY
 8. Подтвердить подключение.
 
-![Шаг 1](https://github.com/inmovery/ComplexParser/tree/master/images/8.jpg)
-![Шаг 2](https://github.com/inmovery/ComplexParser/tree/master/images/9.jpg)
-![Шаг 3](https://github.com/inmovery/ComplexParser/tree/master/images/10.jpg)
+#### Получение доступа к отправке писем
+![Шаг 1](https://github.com/inmovery/ComplexParser/blob/master/images/8.png?raw=true)
+
+#### Получение API_KEY
+![Шаг 2](https://github.com/inmovery/ComplexParser/blob/master/images/9.png?raw=true)
+
+#### Результат генерации API_KEY на основе его названия
+![Шаг 3](https://github.com/inmovery/ComplexParser/blob/master/images/10.png?raw=true)
 
 ### Настройка Heroku
 
@@ -104,7 +120,7 @@
 7. В поле `KEY` ввести `CHROMEDRIVER_PATH`, а в поле `VALUE` ввести `/app/.chromedriver/bin/chromedriver`, после чего нажать на кнопку «Add»
 8.  В поле `KEY` ввести `GOOGLE_CHROME_BIN`, а в поле `VALUE` ввести `/app/.apt/usr/bin/google-chrome`, после чего нажмите на кнопку «Add».
 
-![Инструкция](https://github.com/inmovery/ComplexParser/tree/master/images/7.jpg)
+![Инструкция](https://github.com/inmovery/ComplexParser/blob/master/images/7.png?raw=true)
 
 
 ### Установка значений
