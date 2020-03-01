@@ -130,6 +130,7 @@
 Скачайте приложение:
 1. Через командную строку, используя возможности GitHub: `git clone https://github.com/inmovery/ComplexParser.git`
 2. Через скачивание [архива](https://github.com/inmovery/ComplexParser/archive/master.zip)
+
 Данную программу можно запустить как через командную строку `python main.py`, так и в IDE PyCharm.
 
 ## Развёртывание
