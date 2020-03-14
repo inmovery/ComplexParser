@@ -5,19 +5,20 @@
   <a href="https://github.com/inmovery/ComplexParser/tree/master/lang/english#ComplexParser">English</a>
 </p>
 
-This project is intended for data collection (parsing) from the site `https://freedom-stat.com`. 
+Application is intended for data collection (parsing) from the site [https://freedom-stat.com](https://freedom-stat.com). 
 The functionality of most sites includes registration and authorization, because of which it is impossible to obtain data from the site pages in a normal way (for example, using the `curl` library). Authorization requires user activity.
-This project provides for such a situation. This project demonstrates the process of collecting combat statistics for mortal Combat at bookmakers.
+This project provides for such a situation — demonstrates the process of collecting combat statistics for Mortal Combat at bookmakers.
 
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
 - [Requirements](#requirements)
-  - [Requirements to software](#requirements-for-software)
+  - [Requirements to programming languages](#requirements-to-programming-languages)
   - [Requirements to dependencies](#requirements-to-dependencies)
 - [Installation](#installation)
-  - [Connect to the site](#connect-to-the-site)
+  - [Registration on the site](#registration-on-the-site)
     - [Getting access](#getting-access)
+    - [Result](#result)
   - [Installation of dependencies](#installation-of-dependencies)
   - [Getting API_KEY for sending mail](#getting-api_key-for-sending-mail)
   - [Heroku Setup](#heroku-setup) 
@@ -30,93 +31,77 @@ This project provides for such a situation. This project demonstrates the proces
 
 ## Requirements
 
-### Requirements to software
+### Requirements to programming languages
 - Python 3.6, 3.7 and their modifications
 
 ### Requirements to dependencies
-The following dependencies must be installed:
-1. selenium
-2. pandas
-3. bs4
-4. sendgrid
+The following dependencies (modules) must be installed:
+- [Selenium](https://pypi.org/project/selenium/).
+- [Pandas](https://pypi.org/project/pandas/).
+- [BeautifulSoup](https://pypi.org/project/beautifulsoup4/).
+- [SendGrid](https://pypi.org/project/sendgrid/).
+
+To install the required dependencies, run the following command line code:
+```
+pip install selenium
+pip install pandas
+pip install bs4
+pip install sendgrid
+```
 
 ## Installation
 
 ### Connect to the site
-In order to access the site you need 3 parameters:
-1. Mail
-2. Password
-3. Access to statistics on the site
+The following options are required to access the [site](https://freedom-stat.com):
+1. Mail.
+2. Password.
+3. Access to statistics on the [site](https://freedom-stat.com).
 
 #### Getting access:
-- Register (e.g. temp-mail.org)
-- Confirm your mail
-- Log in to the tasks section and click on the following commands:
-  - Check the progress
-  - To Receive the award
-#### Registration
-![Шаг 1](https://github.com/inmovery/ComplexParser/blob/master/images/1.png?raw=true)
+To access the site, follow these steps:
+1. Log in to the mail service (e.g. via [temp-mail.org](https://temp-mail.org))
+![Step 1](https://github.com/inmovery/ComplexParser/blob/master/images/1.png?raw=true)
+2. Confirm your mail.
+![Step 2](https://github.com/inmovery/ComplexParser/blob/master/images/2.png?raw=true)
+![Step 3](https://github.com/inmovery/ComplexParser/blob/master/images/3.png?raw=true)
+3. On [freedom-stat.com](https://freedom-stat.com) go to the tasks section and click the following buttons in sequence:
+  3.1. "Проверить" (to verify email confirmation)
+  ![Step 4](https://github.com/inmovery/ComplexParser/blob/master/images/4.png?raw=true)
+  3.2. "Получить награду" (in order to activate the free use of the site for 1 hour)
+  ![Step 5](https://github.com/inmovery/ComplexParser/blob/master/images/5.png?raw=true)
 
-#### Receipt of the letter
-![Шаг 2](https://github.com/inmovery/ComplexParser/blob/master/images/2.png?raw=true)
-
-#### Confirm mail and receive data for authorization
-![Шаг 3](https://github.com/inmovery/ComplexParser/blob/master/images/3.png?raw=true)
-
-#### Getting access to services of site. Step 1
-![Шаг 4](https://github.com/inmovery/ComplexParser/blob/master/images/4.png?raw=true)
-
-#### Getting access to services of site. Step 1
-![Шаг 5](https://github.com/inmovery/ComplexParser/blob/master/images/5.png?raw=true)
-
-#### Example of a table from which data is collected
-![Шаг 6](https://github.com/inmovery/ComplexParser/blob/master/images/6.png?raw=true)
-
-### Installation of dependencies
-- Installing the module SendGrid
-  `pip install sendgrid`
-- Installing the module Selenium
-  `pip install selenium`
-- Installing the module BeautifulSoup
-  `pip install bs4`
-- Installing the Data Module
-  `pip install pandas`
+#### Result 
+Результатом является доступ к таблице [статистики Mortal Combat](https://freedom-stat.com/stats/mk).
+##### An example of a table from which data is collected
+![Step 6](https://github.com/inmovery/ComplexParser/blob/master/images/6.png?raw=true)
 
 ### Getting API_KEY for sending mail
-
-1. Register at [sendgrid.com](https://sendgrid.com)
-2. Log in to [sendgrid.com](https://sendgrid.com)
-3. Go to Dashboard
-4. Select the tab on the left side of the Email API screen and select Integration Guide in the pop-up window
-5. Then select "Web API".
-6. Select Python
-7. Create API key
-8. Confirm connection.
-
-#### Getting access to send messages
-![Шаг 1](https://github.com/inmovery/ComplexParser/blob/master/images/8.png?raw=true)
-
-#### Getting API_KEY
-![Шаг 2](https://github.com/inmovery/ComplexParser/blob/master/images/9.png?raw=true)
-
-#### The result of API_KEY generation is based on its name
-![Шаг 3](https://github.com/inmovery/ComplexParser/blob/master/images/10.png?raw=true)
+To get API_key, do the following:
+1. Register at [sendgrid.com](https://sendgrid.com).
+2. Log in to [sendgrid.com](https://sendgrid.com).
+3. Go to Dashboard.
+4. Click the Email API tab on the left side of the screen, select Integration Guide from the menu, and click Web API.
+![Step 1](https://github.com/inmovery/ComplexParser/blob/master/images/8.png?raw=true)
+5. Create API_KEY by selecting the Python programming language.
+![Step 2](https://github.com/inmovery/ComplexParser/blob/master/images/9.png?raw=true)
+![Step 3](https://github.com/inmovery/ComplexParser/blob/master/images/10.png?raw=true)
+6. Confirm connection.
 
 ### Heroku Setup
 
-To connect to heroku, stick to the following algorithm:
-1. Register at [Heroku.com](https://heroku.com)
-2. Log in to [Heroku.com](https://heroku.com)
-3. Create a new application by clicking on the "New" button in the upper right corner of the screen
-4. Go to Settings
+To connect to Heroku:
+1. Register at [Heroku.com](https://heroku.com).
+2. Log in to [Heroku.com](https://heroku.com).
+3. Create a new application by clicking on the "New" button in the upper right corner of the screen.
+4. Go to Settings.
 5. Go to Buildpacks and add the following dependencies:
 ```
     heroku/python
     https://github.com/heroku/heroku-buildpack-chromedriver
     https://github.com/heroku/heroku-buildpack-google-chrome
 ```
-6. Go to the Config Vars section and click the reveal Config Vars button
-7. In the `key` field, enter `CHROMEDRIVER_path`, and in the `value` field enter `/app/.chromedriver/bin/chromedriver`, and then click the add button
+6. Go to the Config Vars section and click the "Reveal Config Vars" button.
+7. In the `key` field, enter `CHROMEDRIVER_path`, and in the `value` field enter `/app/.chromedriver/bin/chromedriver`, and then click the "Add" button.
 8. Enter `GOOGLE_CHROME_bin` in the `key` field, and enter `/app/.apt/usr/bin/google-chrome` in the `value` field, and then click the Add button.
 
 ![Instructions](https://github.com/inmovery/ComplexParser/tree/master/images/7.jpg)
@@ -126,22 +111,21 @@ Set the constants `URL_PARSE`, `EMAIL`, `PASSWORD`, `SENDGRID_API_key`, `FROM_EM
 
 ## Using
 Download the application:
-1. Via the command line, using the GitHub's capabilities: `git clone https://github.com/inmovery/ComplexParser.git`
-2. Via download [archive](https://github.com/inmovery/ComplexParser/archive/master.zip)
+- Via the command line, using the GitHub's capabilities: `git clone https://github.com/inmovery/ComplexParser.git`.
+- Via download [archive](https://github.com/inmovery/ComplexParser/archive/master.zip).
 
-This program can be run from the command line `python main.py` and the IDE PyCharm.
+Application can be run from the command line `python main.py` and the IDE PyCharm.
 
 ## Deployment
 
 ### Local deployment
-In order to use the program on your computer:
-1. Download [chromedriver (Google Chrome)](https://chromedriver.chromium.org/downloads) or [Teckodriver (Firefox)](https://github.com/mozilla/geckodriver/releases)
-  After downloading, move to the folder containing the `main.py` file
+To use the application on your computer:
+1. Download [chromedriver (Google Chrome)](https://chromedriver.chromium.org/downloads) or [Teckodriver (Firefox)](https://github.com/mozilla/geckodriver/releases). After downloading, move to the folder containing the `main.py` file.
 2. Use the following code in the driver selenium initialization (at the beginning of the code):
-  `driver = webdriver.Chrome()`
+  `driver = webdriver.Chrome()`.
 
 ### Server deployment
-To turn on the server, use the features of Heroku. To connect and use Google Chrom Driver, use the blind code in the driver selenium initialization (at the beginning of the code):
+To deploy on the server, use the features of Heroku. To connect and use Google Chrome Driver, use following code in the driver selenium initialization (at the beginning of the code):
 ```
     chrome_options = webdriver.ChromeOptions()
     chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
@@ -152,19 +136,20 @@ To turn on the server, use the features of Heroku. To connect and use Google Chr
 ```
 
 After configuring Heroku, the deployment of the application is the following sequence of commands, which implies the use of Heroku CLI:
-1. heroku login
-2. git init
-3. heroku get:remote -a complex-parser
-4. git add .
-5. git commit -m “initial commit”
-6. pip3 freeze > requirements.txt
-7. echo  > Procfile
-8. Open the Profile file and add "worker : python main.py`
-9. git push heroku master
-10. heroku run python main.py
-11. heroku scale worker=1
-12. heroku logs --tail
+```
+heroku login
+git init
+heroku get:remote -a complex-parser
+git add .
+git commit -m “initial commit”
+pip3 freeze > requirements.txt
+echo worker : python  main.py > Procfile
+git push heroku master
+heroku run python main.py
+heroku scale worker=1
+heroku logs --tail
+```
 
 ## FAQ
 
-See and ask questions in [Issues](https://github.com/inmovery/ComplexParser/issues).
+If you have any questions about how the application works, create a GitHub [Issues](https://github.com/inmovery/ComplexParser/issues).
