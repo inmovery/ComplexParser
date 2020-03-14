@@ -63,7 +63,7 @@ pip install sendgrid
 - Подтвердите свою почту и получите данные для авторизации.
 ![Шаг 2](https://github.com/inmovery/ComplexParser/blob/master/images/2.png?raw=true)
 ![Шаг 3](https://github.com/inmovery/ComplexParser/blob/master/images/3.png?raw=true)
-- На сайте [freedom-stat.com](https://freedom-stat.com) зайдите в раздел «Задания» и последовательно нажмите на следующие кнопки:
+- На сайте [freedom-stat.com](https://freedom-stat.com) перейдите в раздел «Задания» и последовательно нажмите на следующие кнопки:
   - "Проверить" (для того, чтобы верифицировать подтверждение почты)
   ![Шаг 4](https://github.com/inmovery/ComplexParser/blob/master/images/4.png?raw=true)
   - "Получить награду" (для того, чтобы активировать бесплатный режим пользования сайтом на 1 час)
