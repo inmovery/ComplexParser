@@ -65,9 +65,9 @@ To access the site, follow these steps:
 ![Step 2](https://github.com/inmovery/ComplexParser/blob/master/images/2.png?raw=true)
 ![Step 3](https://github.com/inmovery/ComplexParser/blob/master/images/3.png?raw=true)
 3. On [freedom-stat.com](https://freedom-stat.com) go to the tasks section and click the following buttons in sequence:
-  3.1. "Проверить" (to verify email confirmation)
+   1. "Проверить" (to verify email confirmation)
   ![Step 4](https://github.com/inmovery/ComplexParser/blob/master/images/4.png?raw=true)
-  3.2. "Получить награду" (in order to activate the free use of the site for 1 hour)
+   2. "Получить награду" (in order to activate the free use of the site for 1 hour)
   ![Step 5](https://github.com/inmovery/ComplexParser/blob/master/images/5.png?raw=true)
 
 #### Result 
