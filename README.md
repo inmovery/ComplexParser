@@ -16,134 +16,116 @@
   - [Требования к программному обеспечению](#требования-к-программному-обеспечению)
   - [Требования к зависимостям](#требования-к-зависимостям)
 - [Установка](#установка)
-  - [Подключение к сайту](#подключение-к-сайту)
+  - [Регистрация на сайте](#регистрация-на-сайте)
     - [Получение доступа](#получение-доступа)
-  - [Установка зависимостей](#установка-зависимостей)
+    - [Результат](#результат)
   - [Получение API_KEY для отправки почты](#получение-api_key-для-отправки-почты)
   - [Настройка Heroku](#настройка-heroku) 
   - [Установка значений](#установка-значений)
 - [Использование](#использование)
 - [Развёртывание](#развёртывание)
   - [Локальное развёртывание](#локальное-развёртывание)
-  - [Серверное развёртывание](#серверное-развёртывание) 
+  - [Серверное развёртывание](#серверное-развёртывание)
 - [Вопросы](#вопросы)
 
 ## Требования
 
-### Требования к программному обеспечению
-- Python 3.6, 3.7 и их модификации
+### Требования к языкам программирования
+- Python 3.6, 3.7 и их модификации.
 
 ### Требования к зависимостям
-Должны быть установлены следующие зависимости:
-1. selenium
-2. pandas
-3. bs4
-4. sendgrid
+Должны быть установлены следующие зависимости (модули):
+- [Selenium](https://pypi.org/project/selenium/).
+- [Pandas](https://pypi.org/project/pandas/).
+- [BeautifulSoup](https://pypi.org/project/beautifulsoup4/).
+- [SendGrid](https://pypi.org/project/sendgrid/).
+Чтобы установить требуемые зависимости, выполните следующий код в командной строке:
+```
+pip install selenium
+pip install pandas
+pip install bs4
+pip install sendgrid
+```
 
 ## Установка
 
-### Подключение к сайту
-Для того, чтобы получить доступ к сайту необходимы 3 параметра:
-1. Почта
-2. Пароль
-3. Доступ на сайте к получению статистики
+### Регистрация на сайте
+Чтобы получить доступ к сайту, необходимы следующие параметра:
+1. Почта.
+2. Пароль.
+3. Доступ на сайте к получению статистики.
 
-#### Получение доступа:
-- Зарегистрироваться (например, через сайт [temp-mail.org](https://temp-mail.org))
-- Подтвердить свою почту
-- Зайти в раздел «Задания» и нажать следующие команды:
-  - Проверить выполнение
-  - Получить награду
-  
-#### Регистрация
+#### Получение доступа
+Чтобы получить доступ к сайту, выполните следующие действия:
+- Зарегистрируйтесь на почтовом сервисе (например, на сайте [temp-mail.org](https://temp-mail.org)).
 ![Шаг 1](https://github.com/inmovery/ComplexParser/blob/master/images/1.png?raw=true)
-
-#### Получение письма
-![Шаг 2](https://github.com/inmovery/ComplexParser/blob/master/images/2.png?raw=true)
-
-#### Подтверждение почты и получение данных для авторизации
+- Подтвердите свою почту и получите данные для авторизации.
 ![Шаг 3](https://github.com/inmovery/ComplexParser/blob/master/images/3.png?raw=true)
+![Шаг 2](https://github.com/inmovery/ComplexParser/blob/master/images/2.png?raw=true)
+- На сайте [freedom-stat.com](https://freedom-stat.com) зайдите в раздел «Задания» и последовательно нажмите на следующие кнопки:
+  - "Проверить" (для того, чтобы верифицировать подтверждение почты)
+  ![Шаг 4](https://github.com/inmovery/ComplexParser/blob/master/images/4.png?raw=true)
+  - "Получить награду" (для того, чтобы активировать бесплатный режим пользования сайтом на 1 час)
+  ![Шаг 5](https://github.com/inmovery/ComplexParser/blob/master/images/5.png?raw=true)
 
-#### Получение доступа к сайту. Шаг 1
-![Шаг 4](https://github.com/inmovery/ComplexParser/blob/master/images/4.png?raw=true)
-
-#### Поулчение доступа к сайту. Шаг 2
-![Шаг 5](https://github.com/inmovery/ComplexParser/blob/master/images/5.png?raw=true)
-
-#### Пример таблицы, из которой собираются данные
+#### Результат 
+Результатом является доступ к таблице [статистики Mortal Combat](https://freedom-stat.com/stats/mk).
+##### Пример таблицы, из которой собираются данные
 ![Шаг 6](https://github.com/inmovery/ComplexParser/blob/master/images/6.png?raw=true)
-
-### Установка зависимостей
-- Установка модуля SendGrid
-  `pip install sendgrid`
-- Установка модуля Selenium
-  `pip install selenium`
-- Установка модуля BeautifulSoup
-  `pip install bs4`
-- Установка модуля для работы с данными
-  `pip install pandas`
 
 ### Получение API_KEY для отправки почты
 
-1. Зарегистрироваться на сайте [sendgrid.com](https://sendgrid.com)
-2. Авторизоваться на сайте [sendgrid.com](https://sendgrid.com)
-3. Перейти в раздел «Dashboard»
-4. Выбрать вкладку в левой части экрана «Email API» и в выдвинувшемся меня выбрать «Integration Guide»
-5. Далее выбрать «Web API». 
-6. Выбрать Python
-7. Создать API KEY
-8. Подтвердить подключение.
-
-#### Получение доступа к отправке писем
+1. Зарегистрируйтесь на сайте [sendgrid.com](https://sendgrid.com).
+2. Авторизуйтесь на сайте [sendgrid.com](https://sendgrid.com).
+3. Перейдите в раздел «Dashboard».
+4. Перейдите на вкладку «Email API» в левой части экрана, выберите в меню «Integration Guide» и кликните по "Web API".
 ![Шаг 1](https://github.com/inmovery/ComplexParser/blob/master/images/8.png?raw=true)
-
-#### Получение API_KEY
+5. Выберите язык программирования Python.
+6. Создайте API KEY.
 ![Шаг 2](https://github.com/inmovery/ComplexParser/blob/master/images/9.png?raw=true)
-
-#### Результат генерации API_KEY на основе его названия
 ![Шаг 3](https://github.com/inmovery/ComplexParser/blob/master/images/10.png?raw=true)
+7. Подтвердите подключение.
 
 ### Настройка Heroku
 
-Для подклюения к heroku необходимо следовать следующему алгоритму:
-1. Зарегистрироваться на сайте [Heroku.com](https://heroku.com)
-2. Авторизоваться на сайте [Heroku.com](https://heroku.com)
-3. Создать новое приложение, нажав на кнопку «New» в правом верхнем углу экрана
-4. Перейти в раздел «Settings»
-5. Перейти к разделу «Buildpacks» и добавить следующие зависимости:
+Чтобы подключиться к Heroku выполните следующие действия:
+1. Зарегистрируйтесь на сайте [Heroku.com](https://heroku.com).
+2. Авторизуйтесь на сайте [Heroku.com](https://heroku.com).
+3. Создайте новое приложение, нажав на кнопку «New» в правом верхнем углу экрана.
+4. Перейдите в раздел «Settings».
+5. Перейдите к разделу «Buildpacks» и добавить следующие зависимости:
 ```
     heroku/python
     https://github.com/heroku/heroku-buildpack-chromedriver
     https://github.com/heroku/heroku-buildpack-google-chrome
 ```
-6. Перейти к разделу «Config Vars» и нажать на кнопку «Reveal Config Vars»
-7. В поле `KEY` ввести `CHROMEDRIVER_PATH`, а в поле `VALUE` ввести `/app/.chromedriver/bin/chromedriver`, после чего нажать на кнопку «Add»
-8.  В поле `KEY` ввести `GOOGLE_CHROME_BIN`, а в поле `VALUE` ввести `/app/.apt/usr/bin/google-chrome`, после чего нажмите на кнопку «Add».
+6. Перейдите к разделу «Config Vars» и нажать на кнопку «Reveal Config Vars».
+7. В поле `KEY` введите `CHROMEDRIVER_PATH`, а в поле `VALUE` введите `/app/.chromedriver/bin/chromedriver`, после чего нажмите на кнопку «Add».
+8. В поле `KEY` введите `GOOGLE_CHROME_BIN`, а в поле `VALUE` введите `/app/.apt/usr/bin/google-chrome`, после чего нажмите на кнопку «Add».
 
 ![Инструкция](https://github.com/inmovery/ComplexParser/blob/master/images/7.png?raw=true)
 
 
 ### Установка значений
-Установите константы `URL_PARSE`, `EMAIL`, `PASSWORD`, `SENDGRID_API_KEY`, `FROM_EMAIL`, `TO_EMAIL` в файле `settings.py` в соответствии с теми данными, которые вы полуили на этапе установки.
+Установите константы `URL_PARSE`, `EMAIL`, `PASSWORD`, `SENDGRID_API_KEY`, `FROM_EMAIL`, `TO_EMAIL` в файле `settings.py` в соответствии с теми данными, которые вы получили на этапе установки.
 
 ## Использование
 Скачайте приложение:
-1. Через командную строку, используя возможности GitHub: `git clone https://github.com/inmovery/ComplexParser.git`
-2. Через скачивание [архива](https://github.com/inmovery/ComplexParser/archive/master.zip)
+- Через командную строку, используя возможности GitHub: `git clone https://github.com/inmovery/ComplexParser.git`.
+- Через скачивание [архива](https://github.com/inmovery/ComplexParser/archive/master.zip).
 
-Данную программу можно запустить как через командную строку `python main.py`, так и в IDE PyCharm.
+Приложение можно запустить как через командную строку `python main.py`, так и в IDE PyCharm.
 
 ## Развёртывание
 
 ### Локальное развёртывание
-Для того, чтобы использовать программу на своём компьюетере нужно:
-1. Скачать [chromedriver (Google Chrome)](https://chromedriver.chromium.org/downloads) или [geckodriver (Firefox)](https://github.com/mozilla/geckodriver/releases)
-  После скачивание переместить в папку с файлом `main.py`
-2. Использовать следующий код в инициализации driver selenium (в начале кода):
-    `driver = webdriver.Chrome()`
+Чтобы использовать приложение на своём компьютере:
+1. Скачайте [chromedriver (Google Chrome)](https://chromedriver.chromium.org/downloads) или [geckodriver (Firefox)](https://github.com/mozilla/geckodriver/releases). После скачивания переместить в папку с файлом `main.py`.
+2. Используйте следующий код в инициализации driver selenium (в начале кода):
+    `driver = webdriver.Chrome()`.
 
 ### Серверное развёртывание
-Для того, чтобы развернуться на сервере используюся возможности Heroku. Чтобы подключить и использовать Google Chrom Driver используйте слеудющий код в инициализации driver selenium (в начале кода):
+Чтобы развернуть приложение на сервере, используются возможности Heroku. Чтобы подключить и использовать Google Chrome Driver, используйте следующий код в инициализации driver selenium (в начале кода):
 ```
     chrome_options = webdriver.ChromeOptions()
     chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
@@ -154,19 +136,20 @@
 ```
 
 После настройки Heroku развёртывание приложения представляет из себя следующую последовательность команд, которая подразумевает использование Heroku CLI:
-1. heroku login
-2. git init
-3. heroku get:remote -a complex-parser
-4. git add .
-5. git commit -m “initial commit”
-6. pip3 freeze > requirements.txt
-7. echo  > Procfile
-8. Открыть файл Procfile и добавить в него «worker : python  main.py`
-9. git push heroku master
-10. heroku run python main.py
-11. heroku scale worker=1
-12. heroku logs --tail
+```
+heroku login
+git init
+heroku get:remote -a complex-parser
+git add .
+git commit -m “initial commit”
+pip3 freeze > requirements.txt
+echo worker : python  main.py > Procfile
+git push heroku master
+heroku run python main.py
+heroku scale worker=1
+heroku logs --tail
+```
 
-## Вопросы, касаемые неполадок
+## Часто задаваемые вопросы
 
-Все вопросы и ответы на них вы найдёте в разделе [Issues](https://github.com/inmovery/ComplexParser/issues), иначе задайте вопрос.
+Если у вас есть возникли вопросы по работе приложения, создайте GitHub [Issues](https://github.com/inmovery/ComplexParser/issues).
