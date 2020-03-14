@@ -120,7 +120,7 @@ pip install sendgrid
 
 ### Локальное развёртывание
 Чтобы использовать приложение на своём компьютере:
-1. Скачайте [chromedriver (Google Chrome)](https://chromedriver.chromium.org/downloads) или [geckodriver (Firefox)](https://github.com/mozilla/geckodriver/releases). После скачивания переместить в папку с файлом `main.py`.
+1. Скачайте [chromedriver (Google Chrome)](https://chromedriver.chromium.org/downloads) или [geckodriver (Firefox)](https://github.com/mozilla/geckodriver/releases). После скачивания переместите скаченные данные в папку с файлом `main.py`.
 2. Используйте следующий код в инициализации driver selenium (в начале кода):
     `driver = webdriver.Chrome()`.
 
