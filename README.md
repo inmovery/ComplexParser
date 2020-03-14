@@ -39,6 +39,7 @@
 - [Pandas](https://pypi.org/project/pandas/).
 - [BeautifulSoup](https://pypi.org/project/beautifulsoup4/).
 - [SendGrid](https://pypi.org/project/sendgrid/).
+
 Чтобы установить требуемые зависимости, выполните следующий код в командной строке:
 ```
 pip install selenium
