@@ -81,11 +81,10 @@ pip install sendgrid
 3. Перейдите в раздел «Dashboard».
 4. Перейдите на вкладку «Email API» в левой части экрана, выберите в меню «Integration Guide» и кликните по "Web API".
 ![Шаг 1](https://github.com/inmovery/ComplexParser/blob/master/images/8.png?raw=true)
-5. Выберите язык программирования Python.
-6. Создайте API KEY.
+5. Создайте API KEY, выбрав язык программирования Python.
 ![Шаг 2](https://github.com/inmovery/ComplexParser/blob/master/images/9.png?raw=true)
 ![Шаг 3](https://github.com/inmovery/ComplexParser/blob/master/images/10.png?raw=true)
-7. Подтвердите подключение.
+6. Подтвердите подключение.
 
 ### Настройка Heroku
 
